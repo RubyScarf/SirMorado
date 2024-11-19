@@ -62,7 +62,6 @@
 <body>
     <h1 style="color: #000; font-size: 2rem; text-align: center">Advent Calendar</h1>
     <div class="calendar">
-        
         <div id="2" class="boxes red" onclick="clicking('2', content2)"> 2 </div>
         <div id="18" class="boxes" onclick="clicking('18',content18)"> 18 </div>
         <div id="12" class="boxes red" onclick="clicking('12', content12)"> 12 </div>
@@ -106,31 +105,49 @@
                 elem.innerHTML = ":)"
         }
 
-        const year = 2023;
-        const content1 = "xmas card" /*  */;
-        const content2 = "wordsearch puzzel" /* '<img height=500 src=http://www.gifmania.hu/Animalt-Gif-Karacsony/Animalt-gifek-Karacsony-Viccek/Karacsony-Viccek-44587.gif>' */;
-        const content3 = "compliment" /* '<iframe width="700" height="400" src="https://www.youtube.com/embed/sWEfszb9h8Q?autoplay=1" frameborder="0" allowfullscreen></iframe>' */;
-        const content4 = "winter day story" /*  */;
-        const content5 = "link songs" /*  */; 
-        const content6 = "xmas funny clip" /*  */;
-        const content7 = "custom comic" /*  */;
-        const content8 = "xmas kahoot" /*  */;
+        <script>
+        function getSeen() {
+            let stored = localStorage.getItem("alreadySeen");
+            if (stored != null) {
+                stored = stored.split(",");
+                for(var i in stored) stored[i] = parseInt(stored[i]);
+            } else {
+                stored = [];
+            }    
+            return stored;
+        }
+        let seen = getSeen(); 
+        for(var i in seen) {
+                const elem = document.getElementById(seen[i]);
+                elem.innerHTML = ":)"
+        }
+
+        const year = 2024;
+        const content1 = "This is the content of day 1" /*  */;
+        const content2 = "This is the content of day 2" /* '<img height=500 src=http://www.gifmania.hu/Animalt-Gif-Karacsony/Animalt-gifek-Karacsony-Viccek/Karacsony-Viccek-44587.gif>' */;
+        const content3 = "This is the content of day 3" /* '<iframe width="700" height="400" src="https://www.youtube.com/embed/sWEfszb9h8Q?autoplay=1" frameborder="0" allowfullscreen></iframe>' */;
+        const content4 = "This is the content of day 4" /*  */;
+        const content5 = "This is the content of day 5" /*  */; 
+        const content6 = "This is the content of day 6" /*  */;
+        const content7 = "This is the content of day 7" /*  */;
+        const content8 = "This is the content of day 8" /*  */;
         const content9 = "This is the content of day 9" /*  */;
-        const content10 = "story" /*  */;
-        const content11 = "xmas quiz" /*  */;
-        const content12 = "crossword puzzle" /*  */;
-        const content13 = "xmas funny clip" /*  */;
-        const content14 = "movie scenes" /*  */;
-        const content15 = "link songs" /*  */;
-        const content16 = "custom comic" /*  */;
+        const content10 = "This is the content of day 10" /*  */;
+        const content11 = "This is the content of day 11" /*  */;
+        const content12 = "This is the content of day 12" /*  */;
+        const content13 = "This is the content of day 13" /*  */;
+        const content14 = "This is the content of day 14" /*  */;
+        const content15 = "This is the content of day 15" /*  */;
+        const content16 = "This is the content of day 16" /*  */;
         const content17 = "This is the content of day 17" /*  */;
-        const content18 = "xmas kahoot" /*  */;
-        const content19 = "movie scenes" /*  */;
-        const content20 = "xmas quiz" /*  */;
+        const content18 = "This is the content of day 18" /*  */;
+        const content19 = "This is the content of day 19" /*  */;
+        const content20 = "This is the content of day 20" /*  */;
         const content21 = "This is the content of day 21" /*  */;
-        const content22 = "xmas funny clip" /*  */;
-        const content23 = "story" /*  */;
-        const content24 = "https://www.escape-the-crate.com/christmas" /*  */;
+        const content22 = "This is the content of day 22" /*  */;
+        const content23 = "This is the content of day 23" /*  */;
+        const content24 = "This is the content of day 24" /*  */;
+        const content25 = "This is the content of day 25" /* https://rubyscarf.github.io/foryou/ */;
 
         function setSeen(id) {
             const seen = getSeen();
