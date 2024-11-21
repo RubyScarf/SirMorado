@@ -4,22 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Sir's Advent Calendar</title>
+    <link rel="shortcut icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/6235/6235085.png" />
+    <title>Calendario For Sir</title>
     <style>
         body, html { 
             margin: auto;
-            background: linear-gradient(#bdeff2 ,#e8bdf2);
-            /* background-image: url("https://avante.biz/wp-content/uploads/Christmas-Wallpaper/Christmas-Wallpaper-027.jpg"); */
+            background: linear-gradient(#bdeff2 ,#e8bdf2); 
             background-position: center;
             background-repeat: no-repeat;
-            background-size: auto auto;
+            background-size: cover;
         }
         .calendar {
             max-width: 1000px;
             text-align: center;
             margin: auto;
             padding-top: 2%;
-        }
+        } 
         .boxes {
             background-color: rgba(122, 10, 170, 0.2);
             color: rgba(10, 74, 170, 1);
@@ -37,14 +37,14 @@
         }
         .red {
             background-color: rgba(214, 199, 240, 0.2);
-            border: 3px solid rgba(70, 5, 70, 0.3);
+            border: 3px solid rgba(5, 73, 28, 0.3);
         }
         .open {
-            height: 50vh;  /* 500px */
-            width: 65vw; /* 800px or 80vw */
+            height: 300px;  /* 500px */
+            width: 300px; /* 800px or 80vw */
             font: 25px cursive;
             text-shadow: none;
-            color: rgba(35, 24, 71, 1);
+            color: rgba(35, 24, 71 1);
             padding: 20px;
             background-color: rgba(174, 184, 232, 0.815);
         }
@@ -60,7 +60,7 @@
     </style>
 </head>
 <body>
-    <h1 style="color: #000; font-size: 2rem; text-align: center">Advent Calendar</h1>
+    <h1 style="color: #000; font-size: 2rem; font-family: fantasy; text-align: center">Advent Calendar</h1>
     <div class="calendar">
         <div id="11" class="boxes" onclick="clicking('11', content11)"> 11 </div> 
         <div id="1" class="boxes" onclick="clicking('1', content1)"> 1 </div>
