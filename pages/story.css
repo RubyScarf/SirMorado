@@ -2,7 +2,7 @@ html {
   box-sizing: border-box;
 }
 body {
-  background: radial-gradient(circle, rgba(212, 186, 224, .6) 100%, rgba(173, 75, 222, .5) 50%, rgba(0, 0, 139, 0.9) 0%);
+  background: radial-gradient(circle, rgba(102, 0, 204, 0.3) 0%, rgba(204, 153, 255, .5) 50%, rgba(102, 255, 255, 0.2) 100%);
   background-attachment: fixed; /* Ensures background doesn’t scroll with content */
   color: #fff; /* White default text color */
   margin: 0; /* Remove default margins */
