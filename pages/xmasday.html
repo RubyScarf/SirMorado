@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Christmas Celebration</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(to bottom, #b4e2fa, #f4b4fa);
+      color: #2a2a2a;
+      text-align: center;
+      padding: 20px;
+    }
+    h1 {
+      color: #ff0000;
+    }
+    .gift-box {
+      background-color: #ff4444;
+      color: white;
+      border: 2px solid #f1c40f;
+      padding: 20px;
+      width: 200px;
+      margin: 20px auto;
+      border-radius: 10px;
+      position: relative;
+    }
+    .gift-box::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 50px;
+      height: 10px;
+      background: #f1c40f;
+      border-radius: 5px;
+    }
+    .open-btn {
+      background-color: #f1c40f;
+      color: #2a2a2a;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    .open-btn:hover {
+      background-color: #e67e22;
+    }
+    .message {
+      display: none;
+      margin-top: 20px;
+      font-size: 18px;
+      color: #27ae60;
+    }
+  </style>
+</head>
+<body>
+  <h1>🎄 Merry Christmas! 🎅</h1>
+  <p>Click on the gift box to reveal your surprise!</p>
+  
+  <div class="gift-box" id="giftBox">
+    🎁
+  </div>
+  <button class="open-btn" onclick="openGift()">Open Gift</button>
+  <p class="message" id="message">🎉 You just received joy and happiness! Merry Christmas! 🎉</p>
+
+  <script>
+    function openGift() {
+      const giftBox = document.getElementById('giftBox');
+      const message = document.getElementById('message');
+      giftBox.style.display = 'none';
+      message.style.display = 'block';
+    }
+  </script>
+</body>
+</html>
