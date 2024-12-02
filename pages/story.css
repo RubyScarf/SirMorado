@@ -3,40 +3,53 @@ html {
 }
 body {
   background: radial-gradient(circle, rgba(102, 0, 204, 0.3) 0%, rgba(204, 153, 255, .5) 50%, rgba(102, 255, 255, 0.2) 100%);
-  background-attachment: fixed; /* Ensures background doesn’t scroll with content */
-  color: #fff; /* White default text color */
-  margin: 0; /* Remove default margins */
-  font-family: 'Verdana', sans-serif; /* A clean, legible font */
+  background-attachment: fixed;
+  color: #f5f5f5;
+  margin: 0; 
+  font-family: 'Verdana', sans-serif;
+  line-height:1.6;
+  text-align: center; 
 }
 
 .container {
-  background: rgba(255, 255, 255, 0.2); /* Subtle transparency */
-  border: 2px solid rgba(255, 255, 255, 0.5); /* Border with transparency */
+  background: rgba(255, 255, 255, 0.2); 
+  border: 2px solid rgba(255, 255, 255, 0.5);
   border-radius: 15px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Adds depth */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); 
   padding: 20px;
   margin: 20px auto;
   max-width: 800px;
 }
 
 h1 {
-  color: #000; /* White text for contrast against background */
-  text-shadow: 2px 2px 5px #fff; /* Adds a glowing effect */
-  font-size: 3rem; /* Increase the size for a more striking title */
-  margin-top: 20px;
+  color: #000; 
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+  font-size: 3rem; 
+  margin-top: 0;
   text-align: center;
+  font-family: 'Times New Roman', serif; 
 }
 
 p {
   font-family: 'Arial', sans-serif;
-  line-height: 1.8; /* Add spacing between lines for better readability */
+  
   font-size: 1.2rem;
-  color: #ffffff; /* White text for readability on a dark background */
-  padding: 15px; /* Add padding inside the text box */
-  border-radius: 10px; /* Smooth rounded corners */
+  color: #fff0ff; 
+  background: rgba(0, 0, 0, 0.2)
+  padding: 15px; 
+  border-radius: 10px; 
   margin: 20px auto;
-  width: 80%; /* Center the text and limit width */
+  width: 80%; 
   
 a {
+  display: block;
   text-align: center;
+  font-size: 1rem;
+  color: #add8e6; 
+  text-decoration: none;
+  margin-top: 20px;
 }
+
+a:hover {
+  color: #87ceeb; 
+  text-decoration: underline
