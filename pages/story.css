@@ -1,55 +1,100 @@
 html {
   box-sizing: border-box;
 }
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 body {
-  background: radial-gradient(circle, rgba(102, 0, 204, 0.3) 0%, rgba(204, 153, 255, .5) 50%, rgba(102, 255, 255, 0.2) 100%);
+  background: radial-gradient(circle, rgba(255, 223, 186, 1) 0%, rgba(255, 94, 77, 1) 50%, rgba(139, 0, 0, 1) 100%);
   background-attachment: fixed;
-  color: #f5f5f5;
-  margin: 0; 
-  font-family: 'Verdana', sans-serif;
-  line-height:1.6;
-  text-align: center; 
+  color: #fff5e6; /* Warm cream for text */
+  margin: 0;
+  font-family: 'Georgia', serif;
+  line-height: 1.6;
+  text-align: justify;
 }
 
 .container {
-  background: rgba(255, 255, 255, 0.2); 
-  border: 2px solid rgba(255, 255, 255, 0.5);
-  border-radius: 15px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); 
-  padding: 20px;
-  margin: 20px auto;
-  max-width: 800px;
+  background: rgba(255, 255, 255, 0.2); /* Frosted glass effect */
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 20px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.4);
+  padding: 30px;
+  margin: 30px auto;
+  max-width: 900px;
+  position: relative; /* Allows decoration placement */
+}
+
+.container::before {
+  content: '🎄';
+  font-size: 4rem;
+  color: rgba(255, 255, 255, 0.8);
+  position: absolute;
+  top: -20px;
+  left: -20px;
+}
+
+.container::after {
+  content: '❄️';
+  font-size: 4rem;
+  color: rgba(255, 255, 255, 0.8);
+  position: absolute;
+  bottom: -20px;
+  right: -20px;
 }
 
 h1 {
-  color: #000; 
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
-  font-size: 3rem; 
+  color: #ffefd5; /* Soft golden hue for header */
+  text-shadow: 3px 3px 8px rgba(255, 94, 77, 0.6);
+  font-size: 3rem;
   margin-top: 0;
   text-align: center;
-  font-family: 'Times New Roman', serif; 
+  font-family: 'Times New Roman', serif;
+  border-bottom: 3px solid #ff6347; /* Festive underline */
+  padding-bottom: 10px;
 }
 
 p {
   font-family: 'Arial', sans-serif;
-  
   font-size: 1.2rem;
-  color: #fff0ff; 
-  background: rgba(0, 0, 0, 0.2)
-  padding: 15px; 
-  border-radius: 10px; 
+  color: #fff5e6;
+  background: rgba(255, 255, 255, 0.1); /* Subtle transparency */
+  padding: 20px;
+  border-radius: 10px;
   margin: 20px auto;
-  width: 80%; 
-  
+  width: 85%;
+  border: 1px solid rgba(255, 223, 186, 0.8); /* Festive border */
+}
+
 a {
   display: block;
   text-align: center;
   font-size: 1rem;
-  color: #add8e6; 
+  color: #ff6347; /* Cheerful red for links */
   text-decoration: none;
   margin-top: 20px;
 }
 
 a:hover {
-  color: #87ceeb; 
-  text-decoration: underline
+  color: #ffa07a; /* Warm coral on hover */
+  text-decoration: underline;
+}
+
+footer {
+  text-align: center;
+  font-size: 1rem;
+  color: #ffe4b5; /* Golden footer text */
+  margin-top: 20px;
+}
+
+footer::before {
+  content: '✨';
+  margin-right: 5px;
+}
+
+footer::after {
+  content: '✨';
+  margin-left: 5px;
+}
