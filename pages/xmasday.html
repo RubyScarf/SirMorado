@@ -10,11 +10,12 @@
       background: linear-gradient(to bottom, #b4e2fa, #f4b4fa);
       background-attachment: fixed;
       color: #2a2a2a;
-      text-align: center;#
+      text-align: center;
       padding: 20px;
     }
     h1 {
       color: #ff0000;
+      font-size: 2rem; /* Default for smaller screens */
     }
     .gift-box {
       background-color: #ff4444;
@@ -25,6 +26,7 @@
       margin: 20px auto;
       border-radius: 10px;
       position: relative;
+      font-size: 2rem; /* Large emoji on smaller screens */
     }
     .gift-box::before {
       content: '';
@@ -44,7 +46,7 @@
       border: none;
       border-radius: 5px;
       cursor: pointer;
-      font-size: 16px;
+      font-size: 1rem;
     }
     .open-btn:hover {
       background-color: #e67e22;
@@ -52,8 +54,45 @@
     .message {
       display: none;
       margin-top: 20px;
-      font-size: 18px;
+      font-size: 1.2rem; /* Default for smaller screens */
       color: #27ae60;
+    }
+
+    /* Larger screen adjustments */
+    @media (min-width: 768px) {
+      h1 {
+        font-size: 3rem;
+      }
+      .gift-box {
+        width: 300px; /* Larger gift box */
+        padding: 30px;
+        font-size: 3rem; /* Larger emoji size */
+      }
+      .open-btn {
+        font-size: 1.2rem;
+        padding: 15px 30px;
+      }
+      .message {
+        font-size: 1.5rem;
+      }
+    }
+
+    @media (min-width: 1200px) {
+      h1 {
+        font-size: 4rem;
+      }
+      .gift-box {
+        width: 400px; /* Even larger gift box */
+        padding: 40px;
+        font-size: 4rem; /* Largest emoji size */
+      }
+      .open-btn {
+        font-size: 1.5rem;
+        padding: 20px 40px;
+      }
+      .message {
+        font-size: 2rem;
+      }
     }
   </style>
 </head>
